@@ -1,0 +1,21 @@
+# Core PyTorch for Deep Learning models (UNet)
+torch>=2.0.0
+
+# Image processing and data augmentation
+opencv-python>=4.5.0
+albumentations>=1.4.0
+
+# Numerical computations and data utilities
+numpy>=1.20.0
+tqdm>=4.60.0
+joblib>=1.0.0
+
+# Machine learning (KNN, SVM, Naive Bayes, metrics, preprocessing)
+scikit-learn>=1.0.0
+
+# Visualization
+matplotlib>=3.3.0
+seaborn>=0.11.0
+
+# Web Application
+streamlit>=1.0.0
