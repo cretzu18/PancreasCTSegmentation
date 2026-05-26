@@ -19,3 +19,7 @@ seaborn>=0.11.0
 
 # Web Application
 streamlit>=1.0.0
+
+# Hyperparameter Optimization
+optuna>=3.0.0
+torchvision>=0.15.0
