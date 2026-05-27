@@ -15,7 +15,7 @@ MODELS = {
         "model": "./src/models/unet_model.pth",
     },
     "Unet-optuna": {
-        "model": "./src/models/unet_best_params.pth"
+        "model": "./src/models/unet_model_best_params.pth"
     }
 }
 
@@ -43,7 +43,7 @@ except Exception as e:
 
 # User interface
 st.title("Pancreas CT Segmentation")
-st.markdown("A simple application to segment the pancreas from CT scans using different machine learning models.")
+st.markdown("A simple application to detect the pancreas from segmented CT scans using UNet based models.")
 
 col_up1, col_up2 = st.columns(2)
 with col_up1:
