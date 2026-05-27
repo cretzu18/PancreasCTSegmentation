@@ -13,6 +13,9 @@ st.set_page_config(page_title="Pancreas CT Segmentation", layout="wide")
 MODELS = {
     "UNet": {
         "model": "./src/models/unet_model.pth",
+    },
+    "Unet-optuna": {
+        "model": "./src/models/unet_best_params.pth"
     }
 }
 

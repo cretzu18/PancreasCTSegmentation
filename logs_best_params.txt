@@ -1,41 +1,40 @@
-Epoch [1/20], Train Loss: 0.9540, Val Loss: 0.9890
-Epoch [2/20], Train Loss: 0.8327, Val Loss: 0.9872
-Epoch [3/20], Train Loss: 0.7352, Val Loss: 0.9716
-Epoch [4/20], Train Loss: 0.6654, Val Loss: 0.9518
-Epoch [5/20], Train Loss: 0.5953, Val Loss: 0.9477
-Epoch [6/20], Train Loss: 0.5647, Val Loss: 0.9446
-Epoch [7/20], Train Loss: 0.5391, Val Loss: 0.9392
-Epoch [8/20], Train Loss: 0.5039, Val Loss: 0.9363
-Epoch [9/20], Train Loss: 0.4834, Val Loss: 0.9342
-Epoch [10/20], Train Loss: 0.4858, Val Loss: 0.9364
-Epoch [11/20], Train Loss: 0.4589, Val Loss: 0.9309
-Epoch [12/20], Train Loss: 0.4439, Val Loss: 0.9284
-Epoch [13/20], Train Loss: 0.4304, Val Loss: 0.9254
-Epoch [14/20], Train Loss: 0.3993, Val Loss: 0.9240
-Epoch [15/20], Train Loss: 0.3906, Val Loss: 0.9241
-Epoch [16/20], Train Loss: 0.3849, Val Loss: 0.9224
-Epoch [17/20], Train Loss: 0.3706, Val Loss: 0.9206
-Epoch [18/20], Train Loss: 0.3600, Val Loss: 0.9191
-Epoch [19/20], Train Loss: 0.3498, Val Loss: 0.9199
-Epoch [20/20], Train Loss: 0.3493, Val Loss: 0.9184
+Epoch [1/20], Train Loss: 0.9565, Val Loss: 0.9882
+Epoch [2/20], Train Loss: 0.8461, Val Loss: 0.9751
+Epoch [3/20], Train Loss: 0.7466, Val Loss: 0.9663
+Epoch [4/20], Train Loss: 0.6746, Val Loss: 0.9591
+Epoch [5/20], Train Loss: 0.6261, Val Loss: 0.9472
+Epoch [6/20], Train Loss: 0.5887, Val Loss: 0.9468
+Epoch [7/20], Train Loss: 0.5464, Val Loss: 0.9440
+Epoch [8/20], Train Loss: 0.5291, Val Loss: 0.9367
+Epoch [9/20], Train Loss: 0.4929, Val Loss: 0.9369
+Epoch [10/20], Train Loss: 0.4681, Val Loss: 0.9287
+Epoch [11/20], Train Loss: 0.4381, Val Loss: 0.9250
+Epoch [12/20], Train Loss: 0.4303, Val Loss: 0.9281
+Epoch [13/20], Train Loss: 0.4124, Val Loss: 0.9217
+Epoch [14/20], Train Loss: 0.3950, Val Loss: 0.9214
+Epoch [15/20], Train Loss: 0.3870, Val Loss: 0.9218
+Epoch [16/20], Train Loss: 0.3655, Val Loss: 0.9191
+Epoch [17/20], Train Loss: 0.3612, Val Loss: 0.9203
+Epoch [18/20], Train Loss: 0.3571, Val Loss: 0.9203
+Epoch [19/20], Train Loss: 0.3498, Val Loss: 0.9204
+Epoch [20/20], Train Loss: 0.3399, Val Loss: 0.9153
 
 Evaluation on train dataset:
-Mean Dice Coefficient: 0.7878
-Standard Deviation: 0.3017
+Mean Dice Coefficient: 0.7890
+Standard Deviation: 0.3113
 Max Dice Coefficient: 1.0000
 Min Dice Coefficient: 0.0000
 
 
 Evaluation on test dataset:
-Mean Dice Coefficient: 0.9396
-Standard Deviation: 0.2015
+Mean Dice Coefficient: 0.9564
+Standard Deviation: 0.1649
 Max Dice Coefficient: 1.0000
 Min Dice Coefficient: 0.0000
 
 
 Evaluation on the whole dataset:
-Mean Dice Coefficient: 0.8595
-Standard Deviation: 0.2569
+Mean Dice Coefficient: 0.8741
+Standard Deviation: 0.2443
 Max Dice Coefficient: 1.0000
 Min Dice Coefficient: 0.0000
-
