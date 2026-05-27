@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from models.unet import UNet
-from datasets.dataset import PancreasCTDataset
+from datasets.dataset_augmix import PancreasCTDataset
 from sklearn.model_selection import train_test_split
 import os
 import shutil
@@ -51,7 +51,7 @@ def prepare_file_lists():
 
     return positive_data, negative_data
         
-LOGS_FILE = "./logs.txt"
+LOGS_FILE = "./logs_best_params.txt"
 
 def train():
     # Configurations
@@ -61,8 +61,8 @@ def train():
     IMG_SIZE = (256, 256)
     BATCH_SIZE = 16
     EPOCHS = 20
-    LEARNING_RATE = 1e-4
-    MODEL_NAME = "./src/models/unet_model.pth"
+    LEARNING_RATE = 0.0002002308555486968 # from optuna
+    MODEL_NAME = "./src/models/unet_model_best_params.pth"
 
     # Load dataset
     positive_data, negative_data = prepare_file_lists()
@@ -78,17 +78,17 @@ def train():
 
     #Save the validation images and masks in a new folder to test on frontend
     for img_path, mask_path in val_positive:
-        shutil.copy(img_path, "./data/validation/images/positive/")
-        shutil.copy(mask_path, "./data/validation/masks/positive/")
+        shutil.copy(img_path, "./data/validation_best_params/images/positive/")
+        shutil.copy(mask_path, "./data/validation_best_params/masks/positive/")
     for img_path, mask_path in val_negative:
-        shutil.copy(img_path, "./data/validation/images/negative/")
-        shutil.copy(mask_path, "./data/validation/masks/negative/")
+        shutil.copy(img_path, "./data/validation_best_params/images/negative/")
+        shutil.copy(mask_path, "./data/validation_best_params/masks/negative/")
 
     train_list = train_positive + train_negative
     val_list = val_positive + val_negative
     
-    train_dataset = PancreasCTDataset(train_list, img_size=IMG_SIZE)
-    val_dataset = PancreasCTDataset(val_list, img_size=IMG_SIZE, transform=None)
+    train_dataset = PancreasCTDataset(train_list, img_size=IMG_SIZE, use_augmix=True)
+    val_dataset = PancreasCTDataset(val_list, img_size=IMG_SIZE, transform=None, use_augmix=False)
 
     train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4, pin_memory=True, prefetch_factor=2)
     val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=4, pin_memory=True, prefetch_factor=2)

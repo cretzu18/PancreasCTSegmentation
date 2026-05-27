@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from models.unet import UNet
-from data.dataset_augmix import PancreasCTDataset
+from datasets.dataset_augmix import PancreasCTDataset
 import os
 import shutil
 import numpy as np
