@@ -66,6 +66,7 @@ def train():
 
     # Load dataset
     positive_data, negative_data = prepare_file_lists()
+    random.seed(42)
     random.shuffle(positive_data)
     random.shuffle(negative_data)
 
